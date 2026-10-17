@@ -1,0 +1,6 @@
+// Short, replayable teaching sequences. All explanatory text remains visible without motion.
+const E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function motionDiagram(m){
+  const steps=m.steps.map((s,i)=>`<li><button type="button" class="motion-step" data-motion-step="${i}" aria-current="${i===0?'step':'false'}"><span class="motion-index">${String(i+1).padStart(2,'0')}</span><strong>${E(s.title)}</strong><small>${E(s.detail)}</small></button></li>`).join('');
+  return `<figure class="motion-figure motion-${E(m.mode)}" data-motion style="--count:${m.steps.length};--phase:0" role="group" aria-label="${E(m.title)}"><div class="motion-heading"><div><span class="motion-kicker">HAREKETLİ ANLATIM</span><h2>${E(m.title)}</h2></div><div class="motion-controls"><button type="button" data-motion-pause aria-label="Animasyonu durdur">Durdur</button><button type="button" data-motion-replay>Baştan oynat</button></div></div><div class="motion-scene"><ol class="motion-steps">${steps}</ol><div class="motion-rail" aria-hidden="true"><span></span></div></div><figcaption><strong>Karar noktası</strong> ${E(m.caption)}</figcaption></figure>`;
+}
