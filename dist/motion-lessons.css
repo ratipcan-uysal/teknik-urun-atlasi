@@ -1,0 +1,35 @@
+/* Explanatory motion: one pass on first view, with manual step and replay controls. */
+:root{--ease-out:cubic-bezier(.23,1,.32,1);--ease-in-out:cubic-bezier(.77,0,.175,1)}
+.motion-figure{margin:1.5rem 0 3rem;border:2px solid var(--forest);border-radius:17px;background:#fffdf8;box-shadow:6px 7px 0 #dceade;overflow:hidden}
+.motion-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1.2rem;border-bottom:1px solid var(--line);background:#f8fbf5}
+.motion-kicker{display:block;color:var(--coral);font-size:.7rem;font-weight:850;letter-spacing:.15em;margin-bottom:.12rem}
+.motion-heading h2{font:800 clamp(1.05rem,1.7vw,1.35rem)/1.2 Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.03em;margin:0}
+.motion-controls{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}
+.motion-controls button{background:white;color:var(--forest);border:1px solid var(--forest);border-radius:999px;padding:.35rem .68rem;font-size:.78rem;line-height:1.3;font-weight:750}
+.motion-controls button:hover{background:var(--mint)}
+.motion-controls button[aria-pressed=true]{background:var(--forest);color:white}
+.motion-scene{padding:1.25rem 1.1rem 1rem;background:radial-gradient(circle at 85% 20%,#f1f7e8 0,transparent 32%),#fffdf8}
+.motion-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(var(--count),minmax(0,1fr));gap:.55rem}
+.motion-steps li{margin:0;min-width:0}
+.motion-step{width:100%;height:100%;min-height:160px;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:.45rem;padding:.7rem .75rem;border:1.5px solid #9ebdab;border-radius:11px;color:var(--forest-deep);background:#f7f9f4;box-shadow:2px 3px 0 #e3ede3;transform:translateY(0);transition:transform 220ms var(--ease-out)}
+.motion-step[aria-current=step]{background:var(--mint);border-color:var(--forest);box-shadow:4px 5px 0 #c6ddcc;transform:translateY(-5px)}
+.motion-steps li:nth-child(2) .motion-step[aria-current=step]{background:var(--butter)}
+.motion-steps li:nth-child(3) .motion-step[aria-current=step]{background:var(--blue-soft)}
+.motion-steps li:nth-child(4) .motion-step[aria-current=step]{background:#f7ddd6}
+.motion-index{color:var(--coral);font-size:.71rem;font-weight:850;letter-spacing:.12em}
+.motion-step strong{font-size:.91rem;line-height:1.15;overflow-wrap:anywhere}
+.motion-step small{font-size:.78rem;line-height:1.35;color:#4f695d;overflow-wrap:anywhere}
+.motion-rail{height:9px;border-radius:99px;margin-top:1.2rem;background:#d8e9dc;overflow:hidden}
+.motion-rail span{display:block;width:calc(100% / var(--count));height:100%;border-radius:99px;background:var(--coral);transform:translateX(calc(var(--phase)*100%));transition:transform 650ms var(--ease-in-out)}
+.motion-figure figcaption{font-size:.85rem;line-height:1.5;padding:.75rem 1.2rem;border-top:1px solid var(--line);color:#405e53;background:#fff}
+.motion-figure figcaption strong{color:var(--coral);margin-right:.3rem}
+.memory-card{border:1.5px solid var(--forest);border-radius:13px;padding:1.1rem 1.25rem;margin:0 0 2.5rem;background:var(--butter);box-shadow:4px 5px 0 #e9e1cb}
+.memory-card>span{font-size:.7rem;letter-spacing:.15em;color:var(--coral);font-weight:850}
+.memory-card>p{font-weight:780;font-size:1.08rem;line-height:1.4;margin:.35rem 0 .75rem;color:var(--forest-deep)}
+.memory-card details{border-top:1px solid #dcccae;padding-top:.65rem}
+.memory-card summary{cursor:pointer;font-weight:700;color:var(--forest)}
+.memory-card details p{margin:.5rem 0 0}
+@media(max-width:900px){.motion-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.motion-step{min-height:132px}.motion-rail{display:none}}
+@media(max-width:600px){.motion-heading{display:block;padding:.8rem 1rem}.motion-controls{justify-content:flex-start;margin-top:.7rem}.motion-scene{padding:.85rem}.motion-steps{gap:.45rem}.motion-step{min-height:143px;padding:.55rem}.motion-step strong{font-size:.84rem}.motion-step small{font-size:.74rem}.motion-figure figcaption{padding:.7rem 1rem}}
+@media(prefers-reduced-motion:reduce){.motion-step{transition:none;transform:none!important}.motion-rail span{transition:none}[data-motion-pause]{display:none}}
+@media print{.motion-controls{display:none}.motion-step{opacity:1;transform:none;box-shadow:none}.motion-figure{box-shadow:none;break-inside:avoid}}
