@@ -4,6 +4,10 @@ PM ve PO'lar için Türkçe, statik ve düzenlenebilir teknik ürün eğitimi. P
 
 35 ders ve 4 uçtan uca vaka içerir. İlk 20 ders ayrıntılı anlatım, konuya özgü görsel, uygulama ve kaynaklarla hazırlanmıştır; 21–35. dersler daha kısa karar çerçeveleridir. 06–20. derslerde dört adımlı, durdurulup yeniden oynatılabilen hareketli şemalar bulunur.
 
+## System Design Master PDF
+
+[103 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-197.pdf): 197 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
+
 ## Açma ve yerel çalışma
 
 Python 3 ile proje kökünde:
