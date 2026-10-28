@@ -6,7 +6,7 @@ PM ve PO'lar için Türkçe, statik ve düzenlenebilir teknik ürün eğitimi. P
 
 ## System Design Master PDF
 
-[103 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-197.pdf): 197 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
+[108 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-205.pdf): 205 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
 
 ## Açma ve yerel çalışma
 
