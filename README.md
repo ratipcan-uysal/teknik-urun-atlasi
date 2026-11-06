@@ -4,6 +4,10 @@ PM ve PO'lar için Türkçe, statik ve düzenlenebilir teknik ürün eğitimi. P
 
 35 ders ve 4 uçtan uca vaka içerir. İlk 20 ders ayrıntılı anlatım, konuya özgü görsel, uygulama ve kaynaklarla hazırlanmıştır; 21–35. dersler daha kısa karar çerçeveleridir. 06–20. derslerde dört adımlı, durdurulup yeniden oynatılabilen hareketli şemalar bulunur.
 
+## System Design Master web rehberi
+
+[Tam rehberi tarayıcıda oku](https://ratipcan-uysal.github.io/teknik-urun-atlasi/): 205 kavram, 19 şema, 12 tablo ve 101 kaynak bağlantısı. Mobil bölüm menüsü, kavram araması ve PDF indirme bağlantısı içerir. GitHub Pages kaynağı `main` dalındaki `/docs` klasörüdür.
+
 ## System Design Master PDF
 
 [108 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-205.pdf): 205 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
