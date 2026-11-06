@@ -6,11 +6,11 @@ PM ve PO'lar için Türkçe, statik ve düzenlenebilir teknik ürün eğitimi. P
 
 ## System Design Master web rehberi
 
-[Tam rehberi tarayıcıda oku](https://ratipcan-uysal.github.io/teknik-urun-atlasi/): 205 kavram, 19 şema, 12 tablo ve 101 kaynak bağlantısı. Mobil bölüm menüsü, kavram araması ve PDF indirme bağlantısı içerir. GitHub Pages kaynağı `main` dalındaki `/docs` klasörüdür.
+[Tam rehberi tarayıcıda oku](https://ratipcan-uysal.github.io/teknik-urun-atlasi/): 216 kavram, 19 şema, 12 tablo ve 127 kaynak bağlantısı. Mobil bölüm menüsü, kavram araması ve PDF indirme bağlantısı içerir. GitHub Pages kaynağı `main` dalındaki `/docs` klasörüdür.
 
 ## System Design Master PDF
 
-[108 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-205.pdf): 205 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
+[114 sayfalık tam rehberi indir](docs/system-design-master/system-design-master-216.pdf): 216 kavram, 19 şema ve 12 tablo. Tıklanabilir içindekiler, aranabilir Türkçe metin ve geniş şema sayfaları içerir. [Sürüm ve okuma notları](docs/system-design-master/README.md).
 
 ## Açma ve yerel çalışma
 

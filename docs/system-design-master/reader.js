@@ -32,7 +32,7 @@
     document.body.classList.toggle('is-searching', terms.length > 0);
     clear.hidden = !terms.length;
     empty.hidden = !terms.length || matches > 0;
-    status.textContent = terms.length ? `${concepts} kavram · ${matches} içerik eşleşti.` : '205 kavram · Bölüm menüsüyle veya arayarak ilerle.';
+    status.textContent = terms.length ? `${concepts} kavram · ${matches} içerik eşleşti.` : '216 kavram · Bölüm menüsüyle veya arayarak ilerle.';
   }
   search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(filter, 150); });
   clear.addEventListener('click', () => { clearTimeout(timer); search.value = ''; filter(); search.focus(); });

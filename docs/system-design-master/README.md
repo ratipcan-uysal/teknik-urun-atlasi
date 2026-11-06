@@ -2,17 +2,18 @@
 
 Sistem tasarımında bilmen gerekenleri açıklama, gerçek hayat örneği ve kullanım koşuluyla bir araya getiren Türkçe bilgi kontrol listesi. İlgili maddelerde sık hata ve karar soruları da bulunur.
 
-[Web sürümünde oku](https://ratipcan-uysal.github.io/teknik-urun-atlasi/) · [Tam PDF’yi indir](system-design-master-205.pdf)
+[Web sürümünde oku](https://ratipcan-uysal.github.io/teknik-urun-atlasi/) · [Tam PDF’yi indir](system-design-master-216.pdf)
 
-29 Ekim 2026 sürümü: **205 kavram, 19 teknik şema, 12 tablo ve 108 sayfa**. 101 kaynak bağlantısının tamamı korunmuştur; bunlar 73 farklı URL’ye gider. Başlıklardan oluşan tıklanabilir içindekiler, PDF yer imleri, her sayfada dizine dönüş bağlantısı ve aranabilir Türkçe metin vardır. Teknik şemalar açıklamalarıyla birlikte yatay sayfalardadır.
+6 Kasım 2026 sürümü: **216 kavram, 19 teknik şema, 12 tablo ve 114 sayfa**. 127 kaynak bağlantısının tamamı korunmuştur; bunlar 86 farklı URL’ye gider. Başlıklardan oluşan tıklanabilir içindekiler, PDF yer imleri, her sayfada dizine dönüş bağlantısı ve aranabilir Türkçe metin vardır. Teknik şemalar açıklamalarıyla birlikte yatay sayfalardadır.
 
-Madde numaraları 001–205 arasındadır. Bölüm numarası veya zorunlu öğrenme sırası değildir. Okumayı konuya göre sürdürebilirsin:
+Madde numaraları 001–216 arasındadır. Bölüm numarası veya zorunlu öğrenme sırası değildir. Okumayı konuya göre sürdürebilirsin:
 
 - Temeller: 001–052
 - Üretimde çalışan sistemler: 053–129
 - İleri sistem tasarımı: 130–177
 - Performans ve hız: 178–197
 - Ek mimari ve ürün kararları: 198–205
+- Üretimde veri güvenliği ve karar sınırları: 206–216
 - Bütüncül sistem örnekleri, kapasite/maliyet hesapları, sözlük ve kaynakça
 
 [Medium sürümü](https://medium.com/p/486f5d2d20dc)
@@ -25,4 +26,6 @@ Bu sürümde WAF, 12 Factor, API Gateway, MFA/TOTP, Redis veri yapıları, bildi
 
 ## Web sürümünün bakımı
 
-6 Kasım 2026 tarihli web sürümü PDF ile aynı 205 maddeyi, 19 şemayı, 12 tabloyu ve kaynakları taşır. `docs/index.html` tam metni, `docs/system-design-master/reader.css` görünümü, `reader.js` arama ve gezinmeyi içerir. Görseller `assets/` altında WebP olarak saklanır. `.nojekyll` ile statik dosyalar doğrudan servis edilir; paket kurulumu veya derleme gerekmez. İçerik değişikliklerinde web, PDF ve Medium sürümlerini ayrı doğrulayın. `dist/` altındaki önceki 35 derslik site ve mevcut Sites hosting ayarı bağımsızdır.
+6 Kasım 2026 tarihli web sürümü PDF ile aynı 216 maddeyi, 19 şemayı, 12 tabloyu ve kaynakları taşır. `docs/index.html` tam metni, `docs/system-design-master/reader.css` görünümü, `reader.js` arama ve gezinmeyi içerir. Görseller `assets/` altında WebP olarak saklanır. `.nojekyll` ile statik dosyalar doğrudan servis edilir; paket kurulumu veya derleme gerekmez. İçerik değişikliklerinde web, PDF ve Medium sürümlerini ayrı doğrulayın. `dist/` altındaki önceki 35 derslik site ve mevcut Sites hosting ayarı bağımsızdır.
+
+6 Kasım genişletmesi: veri silme, mesaj şeması evrimi, finansal defter ve mutabakat, denetim izi, yazılım tedarik zinciri, PITR tatbikatı, uzun işlerde yetki kontrolü, güvenli dosya alımı, arama kalitesi, kuyruk birikimi ve kural sürümleme eklendi. Yeni 11 madde ve mevcut 34 maddede toplam 45 “Ne zaman kullanmamalıyım?” alanı bulunur. Yeni iddialar 13 birincil kaynakla eşleştirilmiştir. Önceki 197 ve 205 maddelik PDF dosyaları korunur.
